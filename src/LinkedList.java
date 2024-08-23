@@ -95,5 +95,19 @@ public class LinkedList {
         return temp;
     }
 
+    public Node prepend(int value){
+        Node newNode = new Node(value);
+
+        if (length == 0){
+            head = newNode;
+            tail = newNode;
+        }else {
+            newNode.next = head;
+            newNode = head;
+        }
+        length ++;
+        return newNode;
+    }
+
 
 }

@@ -11,6 +11,8 @@ public class Main {
         System.out.println(myLinkedList.removeLast().value);
         // (0) Items - Returns null
         System.out.println(myLinkedList.removeLast());
+        System.out.println(myLinkedList.prepend(8).value);
+
     }
         
         
